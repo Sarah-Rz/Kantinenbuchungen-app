@@ -45,7 +45,7 @@
 }
 .nav-row > button {
     border-radius: 0;
-    width: 75px;
+    width: 80px;
 }
 
 .nav-row > button > a {
@@ -59,6 +59,7 @@
     transition: 0.2s;
 }
 
+/* -------------------- left side (buttons area) -------------------------- */
 
 .grid {
     display: grid;
@@ -80,6 +81,8 @@
 .food:hover {
     background-color: rgb(236, 190, 40);
 }
+
+/* ------------------------- right side ------------------------------- */
 .right {
     height: 100%; 
     margin: 0 0rem;
@@ -89,21 +92,12 @@
     padding: 0 auto;
 }
 
+/* --------------------------- right side top ---------------------------- */
 .right-up {
     width: 310px;
     height: 200px;
     background-color: white;
     border-radius: 13px;
-    margin: 0.5rem 0.5rem;
-    box-shadow: 0 0 4px rgb(122, 117, 117);
-}
-
-.right-down {
-    width: 310px;
-    height: 200px;
-    background-color: white;
-    border-radius: 13px;
-    padding: 1rem auto;
     margin: 0.5rem 0.5rem;
     box-shadow: 0 0 4px rgb(122, 117, 117);
 }
@@ -144,13 +138,24 @@
     padding-top: 3px;
 }
 
-
 .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 
+/* ----------------------------- right side bottom -------------------------------- */
+.right-down {
+    width: 310px;
+    height: 200px;
+    background-color: white;
+    border-radius: 13px;
+    padding: 1rem auto;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 0 0 4px rgb(122, 117, 117);
+}
+
+/*  ------------------ Calculate area --------------- */
 .container-2 {
     display: flex;
     justify-content: center;
@@ -186,7 +191,6 @@
 .btn-num:hover {
     background-color: rgb(168, 168, 161);
     color:#fff
-
 }
 
 #c {
@@ -197,6 +201,7 @@
     color: #fff;
 }
 
+/* ------------------- delete button -------------------- */
 #del {
     background-color: red;
     grid-area: delete;
@@ -214,6 +219,8 @@
 .del:hover {
     color: #fff;
 }
+
+/* ------------------ purchased button ----------------- */
 
 #done {
     background-color: rgb(115, 233, 47);
