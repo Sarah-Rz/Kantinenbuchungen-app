@@ -18,7 +18,7 @@
 
    > - ``` let http = new XMLHttpRequest(); ```
 
-    - The variable http holds now all methods and properties of the object. 
+- The variable http holds now all methods and properties of the object.
 
 * Next I prepare the request with the open() method.
 
