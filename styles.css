@@ -1,9 +1,12 @@
+/*--------------------- body --------------------------- */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Heebo', sans-serif;
  }
+
+ /*------------------- app --------------------*/
 .container {
     display: flex;
     width: 700px;
@@ -23,11 +26,11 @@
     }
 }
 
-
 .left {
     margin-top:1.5rem;
 }
 
+/* ------------------------- navbar ------------------------ */
 .nav {
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +45,7 @@
 }
 .nav-row > button {
     border-radius: 0;
-    width: 77px;
+    width: 75px;
 }
 
 .nav-row > button > a {
