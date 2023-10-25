@@ -1,0 +1,57 @@
+
+[
+    {
+        "id": 1,
+        "name": "Getränk 1", 
+        "price":"1.19",
+        "amount": "9"
+    },  
+    {
+        "id": 2,
+        "name": "Getränk 2", 
+        "price":"1.20",
+        "amount": "9"
+    },  
+    {   
+        "id": 3,
+        "name": "Getränk 3", 
+        "price":"2.06",
+        "amount": "9"
+    },  
+    {
+        "id": 4,
+        "name": "Getränk 4", 
+        "price":"3.58",
+        "amount": "9"
+    },  
+    {
+        "id": 5,
+        "name": "Getränk 5", 
+        "price":"1.39",
+        "amount": "9"
+    },  
+    {
+        "id": 6,
+        "name": "Getränk 6", 
+        "price":"1.24",
+        "amount": "9"
+    },  
+    {
+        "id": 7,
+        "name": "Getränk 7", 
+        "price":"0.89",
+        "amount": "9"
+    },  
+    {
+        "id": 8,
+        "name": "Getränk 8", 
+        "price":"3.37",
+        "amount": "9"
+    },  
+    {
+        "id": 9,
+        "name": "Getränk 9", 
+        "price":"1.05",
+        "amount": "9"
+    }   
+]    

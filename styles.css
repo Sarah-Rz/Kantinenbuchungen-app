@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+ }
+.container {
+    display: flex;
+    width: 700px;
+    border: 3px solid black;
+    margin: 5rem auto;
+    background: linear-gradient(to left, #e2dddd 50%, #ffffff 50%);
+    overflow: hidden;
+}
+
+
+/* Responsive Container for small devices */
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 349px;
+        background: linear-gradient(to top, #e2dddd 50%, #ffffff 50%);
+        
+    }
+}
+
+
+.left {
+    margin-top:1.5rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.nav-bt {
+    padding: 1px 3px;
+    margin-bottom: 0.4rem;
+    background-color: rgb(212, 212, 205);
+    font-size: 15px;
+}
+.nav-row > button {
+    border-radius: 0;
+    width: 77px;
+}
+
+.nav-row > button > a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-row > button > a:hover {
+    text-decoration: none;
+    color: #333;
+    transition: 0.2s;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0.5rem 0;
+    margin: 2.9rem 0 0 0.25rem;
+}
+
+.food {
+    width: 98px;
+    height:98px;
+    margin: 0.5rem 0.4rem;
+    padding: 1.25rem 0.25rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(143, 138, 126);
+    background-color: rgb(235, 199, 82);
+}
+.food:hover {
+    background-color: rgb(236, 190, 40);
+}
+.right {
+    height: 100%; 
+    margin: 0 0rem;
+}
+
+.r-up {
+    padding: 0 auto;
+}
+
+.right-up {
+    width: 310px;
+    height: 200px;
+    background-color: white;
+    border-radius: 13px;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 0 0 4px rgb(122, 117, 117);
+}
+
+.right-down {
+    width: 310px;
+    height: 200px;
+    background-color: white;
+    border-radius: 13px;
+    padding: 1rem auto;
+    margin: 0.5rem 0.5rem;
+    box-shadow: 0 0 4px rgb(122, 117, 117);
+}
+
+.right-up-row{
+    width: 100%;
+    background-color: rgb(212, 212, 205);
+    border-radius: 10px;
+    margin: 3px auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+#right-up-1 {
+    height: 14%;
+}
+
+#right-up-2 {
+    width: 100%;
+    height: 66%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.grid-count-price {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+}
+
+#right-up-3 {
+    height: 14%;
+}
+
+#right-up-4{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 3px;
+}
+
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "seven eight nine"
+    "four five six"
+    "one two three"
+    "zero doublezero c"
+    "delete done done"
+    "delete done done";
+}
+
+.btn-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px 14px;
+    margin: 2px 4px;
+    color: #fff;
+    background-color: rgb(117, 117, 114);
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.btn-num:hover {
+    background-color: rgb(168, 168, 161);
+    color:#fff
+
+}
+
+#c {
+    background-color: rgb(184, 184, 177);
+}
+#c:hover {
+    background-color: rgb(90, 90, 88);
+    color: #fff;
+}
+
+#del {
+    background-color: red;
+    grid-area: delete;
+    font-size: 15px;
+    padding: 2px;
+}
+#del:hover {
+    background-color: rgb(190, 6, 6);
+}
+
+.del{
+    text-decoration: none;
+    color: #fff;
+}
+.del:hover {
+    color: #fff;
+}
+
+#done {
+    background-color: rgb(115, 233, 47);
+    font-size: 25px;
+    grid-area: done;
+}
+#done:hover {
+    background-color: rgb(78, 180, 19);
+    color: #fff;
+}
+
+/* --------------------------- popup message -----------------------------------*/
+.popup {
+    width: 340px;
+    background-color: #e2dddd;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* it will be at the Center of the Webpage first, and very small, hidden */
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 15px 23px 25px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup p {
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-ok {
+    background-color: rgb(115, 233, 47);
+    color:#fff;
+}
+.btn-ok:hover {
+    background-color: rgb(67, 167, 9);
+    color:#fff;
+}
+.btn-cancle {
+    background-color: rgb(248, 92, 20);
+    color:#fff
+}
+.btn-cancle:hover {
+    background-color: rgb(211, 87, 5);
+    color:#fff
+}
+
+.popup > button > a {
+   text-decoration: none;
+   color: #fff;
+}
+.popup > button > a:hover {
+    color: #fff;
+}
+
+/* ------------------------------------- active Nav -------------------------------------- */
+.activeNav {
+    background-color: rgb(236, 190, 40);
+    color: #333;
+    transition: 0.2s;
+}
+
