@@ -1,4 +1,4 @@
-Live Demo:
+### Live Demo:
 
 # [Kantinenbuchungen App](https://sarah-rz.github.io/kantinenbuchungen-app/)
 
