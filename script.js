@@ -211,7 +211,7 @@ if(pageName ==="food.html") {
 if(pageName ==="breakfast.html") {
   document.querySelector(".bf").classList.add("activeNav");
 }
-if(pageName ==="drinks.html") {
+if(pageName ==="index.html") {
   document.querySelector(".drink").classList.add("activeNav");
 }
 
