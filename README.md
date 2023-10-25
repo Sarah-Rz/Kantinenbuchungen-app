@@ -1,8 +1,11 @@
 Live Demo:
+
 # [Kantinenbuchungen App](https://sarah-rz.github.io/kantinenbuchungen-app/)
 
 ## HOW I CREATED THIS APP:
 
+### with Vanilla JavaScript, Local JSON, HTML, CSS, Bootstrap
+<br>
 1. First, I started my code by creating the template of the app with HTML. And created the pages.
 <br><br>
 2. Then I styled and responsived the app, using Bootstrap and CSS.
