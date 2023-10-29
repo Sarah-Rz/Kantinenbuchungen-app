@@ -1,57 +1,235 @@
 
 [
-    {
+    [
+       
+        {
         "id": 1,
         "name": "Getränk 1", 
         "price":"1.19",
         "amount": "9"
-    },  
-    {
+        },
+        {
         "id": 2,
         "name": "Getränk 2", 
         "price":"1.20",
         "amount": "9"
-    },  
+        },
+        {   
+            "id": 3,
+            "name": "Getränk 3", 
+            "price":"2.06",
+            "amount": "9"
+        },  
+        {
+            "id": 4,
+            "name": "Getränk 4", 
+            "price":"3.58",
+            "amount": "9"
+        },  
+        {
+            "id": 5,
+            "name": "Getränk 5", 
+            "price":"1.39",
+            "amount": "9"
+        },  
+        {
+            "id": 6,
+            "name": "Getränk 6", 
+            "price":"1.24",
+            "amount": "9"
+        },  
+        {
+            "id": 7,
+            "name": "Getränk 7", 
+            "price":"0.89",
+            "amount": "9"
+        },  
+        {
+            "id": 8,
+            "name": "Getränk 8", 
+            "price":"3.37",
+            "amount": "9"
+        },  
+        {
+            "id": 9,
+            "name": "Getränk 9", 
+            "price":"1.05",
+            "amount": "9"
+        }    
+    
+],
+[
+    
+    {
+    "id": 11,
+    "name": "Essen 1", 
+    "price":"4.19",
+    "amount": "9"
+    },
+    {
+    "id": 12,
+    "name": "Essen 2", 
+    "price":"11.20",
+    "amount": "9"
+    },
     {   
-        "id": 3,
-        "name": "Getränk 3", 
-        "price":"2.06",
+        "id": 13,
+        "name": "Essen 3", 
+        "price":"21.06",
         "amount": "9"
     },  
     {
-        "id": 4,
-        "name": "Getränk 4", 
-        "price":"3.58",
+        "id": 14,
+        "name": "Essen 4", 
+        "price":"31.58",
         "amount": "9"
     },  
     {
-        "id": 5,
-        "name": "Getränk 5", 
-        "price":"1.39",
+        "id": 15,
+        "name": "Essen 5", 
+        "price":"11.39",
         "amount": "9"
     },  
     {
-        "id": 6,
-        "name": "Getränk 6", 
-        "price":"1.24",
+        "id": 16,
+        "name": "Essen 6", 
+        "price":"11.24",
         "amount": "9"
     },  
     {
-        "id": 7,
-        "name": "Getränk 7", 
-        "price":"0.89",
+        "id": 17,
+        "name": "Essen 7", 
+        "price":"1.89",
         "amount": "9"
     },  
     {
-        "id": 8,
-        "name": "Getränk 8", 
-        "price":"3.37",
+        "id": 18,
+        "name": "Essen 8", 
+        "price":"31.37",
         "amount": "9"
     },  
     {
-        "id": 9,
-        "name": "Getränk 9", 
-        "price":"1.05",
+        "id": 19,
+        "name": "Essen 9", 
+        "price":"11.05",
         "amount": "9"
-    }   
+    }    
+      
+],  
+    [
+        {
+        "id": 11,
+        "name": "Eis 1", 
+        "price":"4.19",
+        "amount": "9"
+        },
+        {
+        "id": 12,
+        "name": "Eis 2", 
+        "price":"3.20",
+        "amount": "9"
+        },
+        {   
+            "id": 23,
+            "name": "Eis 3", 
+            "price":"2.06",
+            "amount": "9"
+        },  
+        {
+            "id": 24,
+            "name": "Eis 4", 
+            "price":"3.58",
+            "amount": "9"
+        },  
+        {
+            "id": 25,
+            "name": "Eis 5", 
+            "price":"1.39",
+            "amount": "9"
+        },  
+        {
+            "id": 26,
+            "name": "Eis 6", 
+            "price":"1.24",
+            "amount": "9"
+        },  
+        {
+            "id": 27,
+            "name": "Eis 7", 
+            "price":"0.89",
+            "amount": "9"
+        },  
+        {
+            "id": 28,
+            "name": "Eis 8", 
+            "price":"3.37",
+            "amount": "9"
+        },  
+        {
+            "id": 29,
+            "name": "Eis 9", 
+            "price":"1.05",
+            "amount": "9"
+        }    
+        
+],
+    [
+    
+        {
+        "id": 31,
+        "name": "Frühstück 1", 
+        "price":"4.19",
+        "amount": "9"
+        },
+        {
+        "id": 32,
+        "name": "Frühstück 2", 
+        "price":"11.20",
+        "amount": "9"
+        },
+        {   
+            "id": 33,
+            "name": "Frühstück 3", 
+            "price":"11.06",
+            "amount": "9"
+        },  
+        {
+            "id": 34,
+            "name": "Frühstück 4", 
+            "price":"15.58",
+            "amount": "9"
+        },  
+        {
+            "id": 35,
+            "name": "Frühstück 5", 
+            "price":"11.39",
+            "amount": "9"
+        },  
+        {
+            "id": 36,
+            "name": "Frühstück 6", 
+            "price":"11.24",
+            "amount": "9"
+        },  
+        {
+            "id": 37,
+            "name": "Frühstück 7", 
+            "price":"11.89",
+            "amount": "9"
+        },  
+        {
+            "id": 38,
+            "name": "Frühstück 8", 
+            "price":"21.37",
+            "amount": "9"
+        },  
+        {
+            "id": 39,
+            "name": "Frühstück 9", 
+            "price":"11.05",
+            "amount": "9"
+        }           
+      
+    ]         
+    
 ]    

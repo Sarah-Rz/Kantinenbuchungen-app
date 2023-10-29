@@ -15,6 +15,87 @@ const sumPopupItemEl = document.querySelector(".sumPopup-item");
 
 
 
+//........................CHANGE DEMO................................
+
+//......Essen
+function loadFood() {
+  let http = new XMLHttpRequest();
+  http.open('get','data.json', true);
+  http.send();
+  http.onload = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      let data = JSON.parse(this.responseText);
+      foodsEl.innerHTML = "";
+    // render foods
+    data[1].forEach( (essen) => {
+   foodsEl.innerHTML += `
+   <button type="button" class="btn food">${essen.name}</button>
+   `;
+    })
+  }
+  }} 
+
+
+//........Getränke 
+function loadDrink() {
+  let http = new XMLHttpRequest();
+  http.open('get','data.json', true);
+  http.send();
+  http.onload = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      let data = JSON.parse(this.responseText);
+      foodsEl.innerHTML = "";
+
+    // render drinks
+    data[0].forEach( (food) => {
+   foodsEl.innerHTML += `
+   <button type="button" class="btn food" id="d-1" onclick= "addToOrder(${food.id})">${food.name}</button>
+   `;
+    })
+  }
+  }} 
+
+
+//........Eis 
+function loadIce() {
+  let http = new XMLHttpRequest();
+  http.open('get','data.json', true);
+  http.send();
+  http.onload = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      let data = JSON.parse(this.responseText);
+      foodsEl.innerHTML = "";
+
+    // render ice
+    data[2].forEach( (ice) => {
+   foodsEl.innerHTML += `
+   <button type="button" class="btn food" id="d-1">${ice.name}</button>
+   `;
+    })
+  }
+  }} 
+
+
+//........Frühstück 
+function loadBreakFast() {
+  let http = new XMLHttpRequest();
+  http.open('get','data.json', true);
+  http.send();
+  http.onload = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      let data = JSON.parse(this.responseText);
+      foodsEl.innerHTML = "";
+
+    // render breakfast
+    data[3].forEach( (bf) => {
+   foodsEl.innerHTML += `
+   <button type="button" class="btn food">${bf.name}</button>
+   `;
+    })
+  }
+  }}  
+
+
 
 // ...........................RENDER FOODS....................................
 function renderProducts() {
@@ -27,7 +108,7 @@ function renderProducts() {
     let data = JSON.parse(this.responseText);
     
     // render foods
-    data.forEach( (food) => {
+    data[0].forEach( (food) => {
       foodsEl.innerHTML += `
       <button type="button" class="btn food" id="d-1" onclick= "addToOrder(${food.id})">${food.name}</button>
       `;
@@ -72,7 +153,6 @@ function renderOrderedFoods() {
       `
       
     
-     
      // Add SELECTED FOODS TO POPUP
      sumPopupItemEl.innerHTML += `
      <div class="row">
@@ -116,7 +196,7 @@ function addToOrder(id) {
       changeNumberOfFoods("plus", id);
     } else {
       // add selected food to order with special id
-      const food = data.find((food) => food.id === id);
+      const food = data[0].find((food) => food.id === id);
       order.push({
         //change the structure of food data, push an object to array: save all the old property of foods using (...food), and add a new property for "Anzahl" area
         ...food,
