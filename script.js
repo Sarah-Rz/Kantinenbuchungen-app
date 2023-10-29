@@ -51,24 +51,28 @@ function renderOrderedFoods() {
     orderedFoodsEl.innerHTML = "";  //clear orders (order area), to prevent duplicate items
     sumPopupItemEl.innerHTML = "";
 
-    order.forEach((food) => {
-     orderedFoodsEl.innerHTML += `
-       <div class="row">
-         <div class="col-lg-6 col-6 data-1">
-             <div>
-                 <p class="data" id="data-name">${food.name}</p>
-             </div>
-         </div>
-         <div class="col-lg-6 col-6 grid-count-price data-2">
-             <div>
-                 <p class="dataCount" id="countNum">${food.numberOfFoods}</p>
-             </div>
-             <div>
-                 <p class="data" id="price">${food.price}€</p>
-             </div>
-         </div> 
-       </div>
-     `
+    // put on limit to display just 5 items on screen using .filter()
+    order.filter((food, i) => i < 5).map((food) => {
+         orderedFoodsEl.innerHTML += `
+        <div class="row">
+          <div class="col-lg-6 col-6 data-1">
+              <div>
+                  <p class="data" id="data-name">${food.name}</p>
+              </div>
+          </div>
+          <div class="col-lg-6 col-6 grid-count-price data-2">
+              <div>
+                  <p class="dataCount" id="countNum">${food.numberOfFoods}</p>
+              </div>
+              <div>
+                  <p class="data" id="price">${food.price}€</p>
+              </div>
+          </div> 
+        </div>
+      `
+      
+    
+     
      // Add SELECTED FOODS TO POPUP
      sumPopupItemEl.innerHTML += `
      <div class="row">
@@ -137,7 +141,7 @@ function updateOrder() {
 function changeNumberOfFoods(action, id) {
   order = order.map((food) => {
     let numberOfFoods = food.numberOfFoods;
-
+    
     if (food.id === id) {
     //Maximum number of items available are 9
       if (action === "plus" && numberOfFoods < food.amount) {
@@ -166,8 +170,11 @@ function renderSumPrice() {
 
     let sumPrice = 0;
 
-    order.forEach((food) => {
+     // put on limit to sum just 5 different items using .filter()
+    order.filter((food, i) => i < 5 ).map((food) => {
+ 
       sumPrice += food.price * food.numberOfFoods;
+    
    });
 
     //to fix numbers to show just two numbers after "." (decimal numbers), using .toFixed()
