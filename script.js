@@ -13,6 +13,8 @@ const sumPopupEl = document.querySelector(".sumPopup");
 // Add SELECTED FOODS TO POPUP
 const sumPopupItemEl = document.querySelector(".sumPopup-item");
 
+const twoEl = document.querySelector("#two");
+
 
 
 //........................CHANGE DEMO................................
@@ -238,6 +240,28 @@ function changeNumberOfFoods(action, id) {
 }
 
 
+// function changeNumberOfFoodsCalTwo(action, id) {
+//   order = order.map((food) => {
+//     let numberOfFoodsCalTwo = food.numberOfFoods;
+    
+//     if (food.id === id) {
+//       if (action === "two") {
+//         numberOfFoodsCalTwo == "2";  
+  
+//       }
+//     }
+//       return {
+//         ...food,
+//         numberOfFoodsCalTwo,
+
+//       };
+
+//   });
+
+//   updateOrder()
+// }
+
+
 //.................................. CALCULATE AND RENDER TOTAL PRICE ............................
 function renderSumPrice() {
 
@@ -286,21 +310,24 @@ function closePopup() {
 
 
 //........................ ACTIVE NAVBAR .....................................
-const pathName = window.location.pathname;
-const pageName = pathName.split("/").pop();
 
-if(pageName ==="ice.html") {
-  document.querySelector(".eis").classList.add("activeNav");
-}
-if(pageName ==="food.html") {
-  document.querySelector(".essen").classList.add("activeNav");
-}
-if(pageName ==="breakfast.html") {
-  document.querySelector(".bf").classList.add("activeNav");
-}
-if(pageName ==="index.html") {
-  document.querySelector(".drink").classList.add("activeNav");
-}
+// Get all the buttons in the navbar
+const buttons = document.querySelectorAll('.nav-bt');
+
+// Loop through each button and add a click event listener
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove the 'active' class from all buttons
+    buttons.forEach(btn => {
+      btn.classList.remove('active');
+    });
+
+    // Add the 'active' class to the clicked button
+    button.classList.add('active');
+  });
+});
+
+
 
 
 

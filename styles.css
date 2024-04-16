@@ -299,9 +299,9 @@
 }
 
 /* ------------------------------------- active Nav -------------------------------------- */
-.activeNav {
-    background-color: rgb(236, 190, 40);
+  .nav-bt.active {
+    background-color: rgb(236, 190, 40);;
     color: #333;
-    transition: 0.2s;
-}
+  }
+
 
